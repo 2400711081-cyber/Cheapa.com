@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cheapa - Sell</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">
+        <img src="images/cheapa logo.png" alt="Cheapa logo" class="logo-img" />
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="sell.html" class="nav-link active">Sell</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <input class="search-bar" type="search" placeholder="Search for properties..." />
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="margin:18px 0; max-width:900px;">
+      <h1>List your property</h1>
+      <form class="sell-form" method="post" enctype="multipart/form-data" style="display:grid;gap:12px;">
+        <label>
+          Listing title
+          <input type="text" name="title" placeholder="e.g. 3-bedroom house in Nakawa" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd;">
+        </label>
+
+        <label>
+          Price (UGX)
+          <input type="number" name="price" placeholder="e.g. 45000000" required style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd;">
+        </label>
+
+        <label>
+          Short description
+          <textarea name="description" rows="4" placeholder="Add details like bedrooms, location, features..." style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd;"></textarea>
+        </label>
+
+        <label>
+          Upload image (optional)
+          <input type="file" name="image" accept="image/*" style="width:100%;padding:6px;">
+        </label>
+
+        <label>
+          Your name
+          <input type="text" name="seller_name" placeholder="e.g. John" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd;">
+        </label>
+
+        <label>
+          Contact phone
+          <input type="tel" name="phone" placeholder="e.g. +256 7xx xxx xxx" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ddd;">
+        </label>
+
+        <div style="display:flex;gap:12px;align-items:center;">
+          <button type="submit" style="background:var(--brand);color:#fff;padding:10px 14px;border:none;border-radius:8px;cursor:pointer;font-weight:bold;">
+            Submit Listing
+          </button>
+
+          <button type="reset" style="background:#eee;color:#333;padding:10px 14px;border:none;border-radius:8px;cursor:pointer;">
+            Reset
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="sell.html">Sell</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="footer-copy">© 2025 Cheapa</div>
+  </footer>
+</body>
+</html>
