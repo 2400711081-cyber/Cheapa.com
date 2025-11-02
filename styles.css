@@ -123,8 +123,39 @@ body{
 }
 
 /* ===== Responsive ===== */
+
 @media (max-width:768px){
   .banner-img{height:240px;}
   .banner-text h2{font-size:18px;}
   .banner-text p{font-size:14px;}
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+  }
+
+  .main-nav {
+    width: 100%;
+    justify-content: space-around;
+    gap: 0;
+  }
+  .main-nav a {
+    padding: 8px 5px; 
+  }
+
+  .header-actions {
+    width: 100%;
+  }
+  .search-bar {
+    width: 100%;
+  }
+
+  .banner-img{height: 200px;} 
+
+  .card img {
+    height: 150px;
+  }
 }
